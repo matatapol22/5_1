@@ -38,6 +38,9 @@ class MainActivity : AppCompatActivity() {
             // Расчет стоимости
             val totalCost = formatCost * photoCount
 
+            val intent = Intent(this, PaymentActivity::class.java)
+            intent.putExtra("TOTAL_COST", totalCost)
+            startActivity(intent)
 
         }
     }
