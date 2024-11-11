@@ -10,10 +10,69 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
+        android:text="Выберите формат:"
+        android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.223" />
+
+    <RadioGroup
+        android:id="@+id/formatRadioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints">
+
+    </RadioGroup>
+
+    <!-- Кнопка для расчета -->
+
+    <EditText
+        android:id="@+id/photoCountEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Количество фотографий"
+        android:inputType="number"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="410dp" />
+
+    <Button
+        android:id="@+id/calculateButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="OK"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="161dp"
+        tools:layout_editor_absoluteY="468dp" />
+
+    <RadioButton
+        android:id="@+id/radio_9x12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:tag="100"
+        android:text="9x12 (100 руб)"
+        tools:layout_editor_absoluteX="136dp"
+        tools:layout_editor_absoluteY="200dp" />
+
+    <RadioButton
+        android:id="@+id/radio_10x15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:tag="150"
+        android:text="10x15 (150 руб)"
+        tools:layout_editor_absoluteX="136dp"
+        tools:layout_editor_absoluteY="270dp" />
+
+    <RadioButton
+        android:id="@+id/radio_18x24"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:tag="300"
+        android:text="18x24 (300 руб)"
+        tools:layout_editor_absoluteX="136dp"
+        tools:layout_editor_absoluteY="341dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
